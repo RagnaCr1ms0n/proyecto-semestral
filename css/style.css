@@ -1,5 +1,5 @@
 .nav-link:hover{
-    background-color: grey;
+    background-color: rgb(2, 250, 35);
     color: white;
 }
 
@@ -8,5 +8,5 @@
 }
 
 .active {
-    background-color: grey !important;
+    background-color: rgb(2, 250, 35) !important;
 }
