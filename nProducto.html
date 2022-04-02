@@ -37,14 +37,14 @@
               </li>
               <li class="nav-item">
                 <div class="dropdown">
-                  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                  <button type="button" class="btn btn-success dropdown-toggle active" data-bs-toggle="dropdown">
                     Venta
                   </button>
                   <ul class="dropdown-menu bg-success">
-                    <li><a class="dropdown-item" href="nProducto.html">Vender producto</a></li>
-                    <li><a class="dropdown-item" href="articulosD.html">Actualizar stock</a></li>
-                    <li><a class="dropdown-item" href="articulosD.html">Cambio de precios</a></li>
-                    <li><a class="dropdown-item" href="articulosD.html">Articulos Disponibles</a></li>
+                    <li><a class="dropdown-item" href="#">Vender producto</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar stock</a></li>
+                    <li><a class="dropdown-item" href="#">Cambio de precios</a></li>
+                    <li><a class="dropdown-item" href="#">Articulos Disponibles</a></li>
                   </ul>
                 </div>
               </li>
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-sm-2 bg-success" style="min-height: 65vh;"><ul class="nav nav-pills flex-column mt-1">
                 <li class="nav-item mt-1">
-                  <a class="nav-link active" href="index2.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                  <a class="nav-link" href="index2.html"><i class="fa-solid fa-house"></i> Inicio</a>
                 </li>
                 <li class="nav-item mt-1">
                   
@@ -78,14 +78,14 @@
                 </li>
                 <li class="nav-item mt-1">
                   <div class="dropdown">
-                    <button type="button" class="btn btn-success dropdown-toggle fa-solid fa-cash-register" data-bs-toggle="dropdown">
+                    <button type="button" class="btn btn-success dropdown-toggle fa-solid fa-cash-register active" data-bs-toggle="dropdown">
                       Venta
                     </button>
                     <ul class="dropdown-menu bg-success">
-                      <li><a class="dropdown-item" href="nProducto.html">Vender producto</a></li>
-                      <li><a class="dropdown-item" href="articulosD.html">Actualizar stock</a></li>
-                      <li><a class="dropdown-item" href="articulosD.html">Cambio de precios</a></li>
-                      <li><a class="dropdown-item" href="articulosD.html">Articulos Disponibles</a></li>
+                      <li><a class="dropdown-item" href="#">Vender producto</a></li>
+                      <li><a class="dropdown-item" href="#">Actualizar stock</a></li>
+                      <li><a class="dropdown-item" href="#">Cambio de precios</a></li>
+                      <li><a class="dropdown-item" href="#">Articulos Disponibles</a></li>
                     </ul>
                   </div>
                 </li>
@@ -94,44 +94,48 @@
                 </li>
                 
               </ul></div>
-                <div class="col-sm-10">
-                    <div class="row">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-10 ">
-                              <div class="row ">
-                                    <div class="col-sm-6 mt-2 ">
-                                            <div class="card mt-2 " style="width:250px">
-                                                <img class="card-img-top" src="../proyecto/img/cart-shopping-solid.svg" alt="Card image">
-                                                <div class="card-body text-center">
-                                                <h4 class="card-title">Compra</h4>
-                                                
-                                                <a href="#" class="btn btn-primary">Compra</a>
-                                                </div>
-                                            </div>
-                                            
-                                    </div>
-
-                                <div class="col-sm-6 mt-2">
-                                  <div class="card mt-2 " style="width:250px">
-                                    <img class="card-img-top" src="../proyecto/img/cash-register-solid.svg" alt="Card image">
-                                    <div class="card-body text-center">
-                                    <h4 class="card-title">Venta</h4>
-                                    
-                                    <a href="ventas.html" class="btn btn-primary">Venta</a>
-                                    </div>
-                                </div>
-                                        
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                <div class="row">
+                    
+                    <div class="col-sm-12 mb-3 mt-3">
+                        <form action="productoE.html" method="get">
+                            <img src="../proyecto/img/cart-plus-solid.svg" alt="" width="200px">
+                            <div class="form-group mt-3">
+                                <label for="files">Sube una foto de tu producto:</label>
+                                <input type="file" id="files" name="files" multiple><br><br>
+                                
+                            </div>
+                  
+                            <div class="form-group mb-2">
+                                <label for="txtNombre">Nombre articulo:</label>
+                                <input placeholder="Ej: Tijeras Podadoras" class="form-control" type="text" id="txtNombre" name="txtNombre">
+                            </div>
+                  
+                            <div class="form-group mb-2">
+                                <label for="txtApellido">Precio:</label>
+                                <input placeholder="Ej: 3990" class="form-control" type="text" id="txtApellido" name="txtApellido">
+                            </div>
+                  
+                            <div class="form-group mb-2">
+                                <label for="txtFono">Cantidad:</label>
+                                <input placeholder="Ej: 88" class="form-control" type="text" id="txtFono" name="txtFono">
+                            </div>
+                  
+                            <div class="form-group mb-3">
+                              <label for="txtEmail">Descripcion:</label>
+                              <input placeholder="Ej:Tijeras Podadoras para cortar ramas, hojas, yugulares, etc.
+                              " class="form-control" type="text" id="txtEmail" name="txtEmail">
+                          </div>
+                  
+                            
+                            <input class="btn btn-success" type="submit" id="btnEnviar" name="btnEnviar">
+                            <input class="btn btn-danger" type="reset" id="btnLimpiar" name="btnLimpiar">
+                        </form>
                     </div>
-                </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                        </div>
-                    </div>
+                    
+            </div>
+                                   
+              
 
         </div>
     </div>
@@ -160,7 +164,6 @@
         </div>
       </div>
     </footer>
-
 
 
 

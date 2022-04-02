@@ -1,5 +1,5 @@
 .nav-link:hover{
-    background-color: grey;
+    background-color: rgb(2, 250, 35);
     color: white;
 }
 
@@ -8,5 +8,32 @@
 }
 
 .active {
-    background-color: grey !important;
+    background-color: rgb(2, 250, 35) !important;
+}
+
+.footer{
+    text-align: center;
+}
+
+.eso{
+    margin-top: 4px;
+}
+
+.dropdown-item:hover{
+ background-color: chartreuse;
+ 
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown:hover{
+    background-color: rgb(2, 250, 35);
+    color: white;
+}
+.esa-otra{
+    color: chartreuse;
+    
+
 }
